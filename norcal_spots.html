@@ -4,23 +4,37 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Emily Final Page</title>
+    <link rel="icon" href="images/icon.png">
+	<!-- <link rel="stylesheet" href="css/html5reset.css"> -->
+	<link rel="stylesheet" href="css/style.css">
+
+    <!-- Add icon library -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/
+        font-awesome/4.7.0/css/font-awesome.min.css"> -->
+	<!-- <script src="https://kit.fontawesome.com/7f8792e3e2.js" 
+        crossorigin="anonymous"></script> -->
+    
+    <title>Norcal Spots</title>
 </head>
 <body>
+    <a class="skip" href="#main-norcal-container">Skip to Main Content</a>
     <header>
-        <div class="skip"><a href="#main-container">Skip to Main Content</a></div>
+        <img src="images/icon.png" alt="Disco ball clipart" id = "disco-ball" width="75">
+         <!-- FIX ANIMATION -->
+            <!-- <div class="disco-ball-bounce"> -->
       <nav>
           <ul>
-            <li><a href="index.html">Home</a></li>
-            <li class="active"><a href = "norcal_spots.html">Norcal Spots</a></li>
-            <li><a href="food.html">Food</a></li>
+            <li onclick="speakTitles('Home')"><i class="home"></i><a href="index.html">Home</a></li>
+            <li onclick="speakTitles('Norcal Spots')" class="active"><a href = "norcal_spots.html">Norcal Spots</a></li>
+            <li onclick="speakTitles('Food')"><i class="food"></i><a href="food.html">Food</a></li>
+            <!-- <li class="fa fa-linkedin"></i><a href="https://www.linkedin.com/in/emilyeyou/"></a></li> -->
           </ul>
         </nav>
     </header>
 
-    <main class="container" id="main-container" tabindex="0">
-        <div class="intro" id="intro-text">
-            <h1 id="main-header">My Favorite Places to Visit in Northern California</h1>
+    <main class="norcal-container" id="main-norcal-container" tabindex="0">
+        <div class="norcal-intro" id="intro-norcal-text">
+            <h1 id="main-norcal-header">My Favorite Places to Visit in Northern California</h1>
             <br>
             <br>
             <p>
@@ -35,22 +49,24 @@
         </div>
 
         <div id="norcal-spots-container-1">
-            <div class="photo-worthy-spots-text-container">
+            <div class="photo-worthy-spots-text-container" id="photo-spots-text-container">
                 <h2>Photo-Worthy Spots</h2>
                 <p>
-                    Add Text Here
+                    The Northern California coast is one of the most picturesque 
+                    places I have ever been to. When a friend asks for recommendations 
+                    on places to visit that are also great for those spontaneous 
+                    photoshoots, I always suggest them to check out Big Sur 
+                    along Highway 1, Capitola Village, and the Painted Ladies 
+                    in San Francisco. For those willing to take a longer drive to catch 
+                    amazing views, Big Sur is a must-stop. Capitola village is a family 
+                    and dog-friendly town sprinkled with cute galleries and coffee shops. 
+                    The Painted Ladies are a row of Victorian-style houses that resemble 
+                    the period of the California Gold Rush.
                 </p>
-                <br>
-                <p>
-                    Add Text Here
-                </p>
-                <br>
-                <p>
-                    Add Text Here
-                </p>
+                
                 <br>
             </div>
-            <div class="photo-worthy-spots-image-container">
+            <div class="photo-worthy-spots-image-container" id="photo-spots-image-container">
                 <img class="big-sur" src="images/norcal-spots/big-sur.JPG" 
                     alt="Big Sur Beach cliff with wildflowers" width="350">
                 <img class="capitola-village" src="images/norcal-spots/capitola-village.JPG" 
@@ -62,22 +78,23 @@
         </div>
         
         <div id="norcal-spots-container-2">
-            <div class="walkable-places-text-container">
+            <div class="walkable-places-text-container" id="walkable-spots-text-container">
                 <h2>Walkable Places</h2>
                 <p>
-                    Add Text Here
-                </p>
-                <br>
-                <p>
-                    Add Text Here
-                </p>
-                <br>
-                <p>
-                    Add Text Here
+                    If you're wanting to get your steps in for the day, look no further. 
+                    Just outside of the San Francisco Bay Area is Henry Cowell State 
+                    Park, home to many hiking trails and the Garden of Eden swimming hole 
+                    surrounded by redwood trees. If window shopping and grabbing a lunch 
+                    is on the agenda, Carmel-by-the-Sea is a quaint town that is great for 
+                    relaxing and annual Art of Wine festival in the spring. Monterey is just a 
+                    5 mile drive further south, and it has one of the richest marine 
+                    ecosystems in the world. For the ocean-lovers, there are many things to do 
+                    including visiting Monterey Bay Aquarium, kayaking, and enjoying a 
+                    bowl of clam chowder.
                 </p>
                 <br>
             </div>
-            <div class="walkable-places-image-container">
+            <div class="walkable-places-image-container" id="walkable-spots-image-container">
                 <img class="henry-cowell-park" src="images/norcal-spots/henry-cowell-park.JPG" 
                     alt="Railroad tracks surrounded by redwood trees in Henry Cowell 
                     State Park" width="350">
@@ -90,22 +107,24 @@
         </div>
 
         <div id="norcal-spots-container-3">
-            <div class="overnight-stays-text-container">
+            <div class="overnight-stays-text-container" id="overnight-stays-text-container">
                 <h2>Overnight Stays</h2>
                 <p>
-                    Add Text Here
-                </p>
-                <br>
-                <p>
-                    Add Text Here
-                </p>
-                <br>
-                <p>
-                    Add Text Here
+                    San Luis Obispo (SLO), Yosemite, and Lake Tahoe are locations worth staying 
+                    for a few days, perfect for a long weekend! San Luis Obispo is a 
+                    Spanish town with unique architecture, vineyards, and butterfly groves. 
+                    My favorite pit stops are Slodoco donut shop, Avila and Butterfly Beach, 
+                    and the evening farmer's market. In my experience, the best way 
+                    to experience Yosemite National Park is by hikin, ideally in 
+                    Fall or Spring. A few places not to miss: Bridalveil Falls, Half Dome, 
+                    El Capitan, and Merced River Rafting. A crowd-favorite and popular 
+                    spot year-round is Lake Tahoe, which is located between on the 
+                    border of California and Nevada. Whether you prefer to go boating 
+                    or skiing, Lake Tahoe is a place filled with adventure.
                 </p>
                 <br>
             </div>
-            <div class="overnight-stays-image-container">
+            <div class="overnight-stays-image-container" id="overnight-stays-image-container">
                 <img class="slo" src="images/norcal-spots/slo.JPG" 
                     alt="View of trail with oceanside greenery in San Luis Obispo" 
                     width="350">

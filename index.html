@@ -4,29 +4,44 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Emily Final Page</title>
+    <link rel="icon" href="images/icon.png">
+	<!-- <link rel="stylesheet" href="css/html5reset.css"> -->
+	<link rel="stylesheet" href="css/style.css">
+    
+    
+    <!-- Add icon library -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/
+        font-awesome/4.7.0/css/font-awesome.min.css"> -->
+	<!-- <script src="https://kit.fontawesome.com/7f8792e3e2.js" 
+        crossorigin="anonymous"></script> -->
+    
+    <title>Home</title>
 </head>
 <body>
+    <a class="skip" href="#main-home-container">Skip to Main Content</a>
     <header>
-        <div class="skip"><a href="#main-container">Skip to Main Content</a></div>
+        <img src="images/icon.png" alt="Disco ball clipart" id = "disco-ball" width="75">
+         <!-- FIX ANIMATION
+            <div class="disco-ball-bounce"> -->
       <nav>
           <ul>
-            <li class="active"><a href="index.html">Home</a></li>
-            <li><a href = "norcal_spots.html">Norcal Spots</a></li>
-            <li><a href="food.html">Food</a></li>
+            <li onclick="speakTitles('Home')"class="active"><a href="index.html">Home</a></li>
+            <li onclick="speakTitles('Norcal Spots')"><i class="norcal-spots"></i><a href = "norcal_spots.html">Norcal Spots</a></li>
+            <li onclick="speakTitles('Food')"><i class="food"></i><a href="food.html">Food</a></li>
+            <!-- <li class="fa fa-linkedin"></i><a href="https://www.linkedin.com/in/emilyeyou/"></a></li> -->
           </ul>
+          
         </nav>
     </header>
-    <main class="container" id="main-container" tabindex="0">
+    <main class="home-container" id="main-home-container" tabindex="0">
         <div class="profile-image" id="profile">
             <h1>Hello, I'm Emily!</h1>
-            <!-- <h1 id="main">
-            Hi, I'm  <span class="title">Emily</span>!
-            </h1> -->
-        
-        <div class="text-container">
+            
+            <div class="typed-out">A UX Designer and Web Developer</div>
+            
+        <div class="home-text-container" id="home-text-container">
             <p>
-                Hi! My name is Emily You. I'm currently a junior at the 
+                Hi, my name is Emily You. I'm currently a junior at the 
                 University of Michigan pursuing a dual degree in UX Design and 
                 Cognitive Science with a minor in <a class="link" 
                 href="https://cfe.umich.edu/">Entrepreneurship</a>. I am 
@@ -62,11 +77,11 @@
             </p>
         </div>
 
-        <div class="image-container" id="image-container">
+        <div class="home-image-container" id="home-image-container">
 
             <img class="profile" src="images/home/profile.jpg" 
                 alt="Picture of Emily during sunset" width="400">
-            <img class="profile" src="images/home/sunflower.jpg" 
+            <img class="sunflower" src="images/home/sunflower.jpg" 
                 alt="Emily walking through sunflower field" width="400">
             <img class="disco" src="images/home/disco.jpg" 
                 alt="Disco ball reflecting light on ceiling walls" width="400">
@@ -74,24 +89,27 @@
         
         <br>
         <br>
-        <!-- 
+
+        <h2 id="Pinterest-descripton"> Where I find ideas for recipes and travel inspiration! </h2>
         <div id="Pinterest">
-            <h2>Where I find ideas for recipes and travel inspiration!</h2>
-            <a data-pin-do="embedBoard" data-pin-board-width="600" 
+            <div class="Pinterest-board">
+            <!-- <a data-pin-do="embedBoard" data-pin-board-width="500"
                 data-pin-scale-height="400" data-pin-scale-width="120" 
                 href="https://www.pinterest.com/emilyyouuu/food/" 
-                alt="Embedded Pinterest Board for recipe ideas"></a>
+                alt="Embedded Pinterest Board for recipe ideas"></a> -->
             <a data-pin-do="embedBoard" data-pin-board-width="600" 
-                data-pin-scale-height="400" data-pin-scale-width="120" 
+                data-pin-scale-height="400" data-pin-scale-width="100" 
                 href="https://www.pinterest.com/emilyyouuu/travel/" 
                 alt="Embedded Pinterest Board for travel destinations"></a>
         </div>
-        -->
+        
+
+        
     </main>
     <br>
     <footer>
         <p>Emily You © 2022</p>
     </footer>
-    <!-- <script async defer src="//assets.pinterest.com/js/pinit.js"></script> -->
+    <script async defer src="//assets.pinterest.com/js/pinit.js"></script>
 </body>
 </html>

@@ -4,23 +4,37 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Emily Final Page</title>
+    <link rel="icon" href="images/icon.png">
+	<!-- <link rel="stylesheet" href="css/html5reset.css"> -->
+	<link rel="stylesheet" href="css/style.css">
+
+    <!-- Add icon library -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/
+        font-awesome/4.7.0/css/font-awesome.min.css"> -->
+	<!-- <script src="https://kit.fontawesome.com/7f8792e3e2.js" 
+        crossorigin="anonymous"></script> -->
+    
+    <title>Food</title>
 </head>
 <body>
+    <a class="skip" href="#main-food-container">Skip to Main Content</a>
     <header>
-        <div class="skip"><a href="#main-container">Skip to Main Content</a></div>
+        <img src="images/icon.png" alt="Disco ball clipart" id = "disco-ball" width="75">
+        <!-- FIX ANIMATION -->
+            <!-- <div class="disco-ball-bounce"> -->
       <nav>
           <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href = "norcal_spots.html">Norcal Spots</a></li>
-            <li class="active"><a href="food.html">Food</a></li>
+            <li onclick="speakTitles('Home')"><i class="home"></i><a href="index.html">Home</a></li>
+            <li onclick="speakTitles('Norcal Spots')"><i class="norcal-spots"></i><a href = "norcal_spots.html">Norcal Spots</a></li>
+            <li onclick="speakTitles('Food')"class="active"><a href="food.html">Food</a></li>
+            <!-- <li class="fa fa-linkedin"></i><a href="https://www.linkedin.com/in/emilyeyou/"></a></li> -->
           </ul>
         </nav>
     </header>
     
-    <main class="container" id="main-container" tabindex="0">
-        <div class="intro" id="intro-text">
-            <h1 id="main-header">My Favorite Cuisines</h1>
+    <main class="food-container" id="main-food-container" tabindex="0">
+        <div class="food-intro" id="intro-food-text">
+            <h1 id="main-food-header">My Favorite Cuisines</h1>
             <br>
             <br>
             <p>
@@ -33,54 +47,67 @@
             <br>
         </div>
 
-        <div class="food-category-container-1">
-            <div class="asian-food-text-container">
+        <div class="food-category-container-1" id="food-container-1">
+            <div class="asian-food-text-container" id="asian-food-text-container">
                 <h2>Asian Food (Southeast Asian, East Asian, and Asian Pacific)</h2>
                 <p>
-                    Add Text Here
+                    One of my favorite asian dishes to order from a restaurant is 
+                    curry vermicelli noodles, a dish that originates from Singapore. 
+                    The curry blend of peppercorns, cumin and turmeric paired with crisp bean 
+                    sprouts garnished on top create a unique balance of textures. 
                 </p>
-                <br>
                 <p>
-                    Add Text Here
+                    A favorite Asian-inspired dish to make at home is poke bowls with salmon sashimi, 
+                    avocado, edamame, cucumbers, and pickled ginger on a bed of 
+                    rice. I love how the bowl brings out the natural flavors of 
+                    fresh ingredients. Another dish I make often, especially in college, is 
+                    teriyaki salmon bowls, which is essentially the ingredients of a poke 
+                    bowl but cooked and prepared with a soy glaze.
                 </p>
-                <br>
                 <p>
-                    Add Text Here
+                    When I am at a Japanese restaurant, I love to order oyakodon which is a 
+                    dish with chicken, egg, and onion served over rice. The main flavor of 
+                    the dish is dashi, which is a broth made from dried bonito flakes. 
+                    I recently learned how to make this dish for myself 
+                    after having bought a small bottle of dashi broth for myself!
                 </p>
+                <p>
+                    A childhood favorite of mine and a tradition in my family during 
+                    the colder months is hotpot. I grew up helping my mom wash vegetables
+                    —typically spinach, cabbage and an assortment of mushrooms—and 
+                    arranging a sauce bar.
+                </p>
+                
+                
                 <br>
             </div>
-            <div class="asian-food-image-container">
+            <div class="asian-food-image-container" id="asian-food-image-container">
                 <img class="noodles" src="images/food/asian/noodles.jpg" 
-                    alt="Curry noodles with bean sprouts on wooden table" width="250">
+                    alt="Curry noodles with bean sprouts on wooden table" width="150">
                 <img class="poke" src="images/food/asian/poke.jpg" 
                     alt="Poke bowl with seaweed, salmon, avocado, edamame, and cucumber" 
-                    width="250">
+                    width="150">
                 <img class="katsu" src="images/food/asian/katsu.jpg" 
-                    alt="Korean chicken katsu with egg over rice" width="250">
+                    alt="Korean chicken katsu with egg over rice" width="150">
                 <img class="hotpot" src="images/food/asian/hotpot.jpg" 
-                    alt="Chinese hotpot spread with meat and veggies on dinner table" width="250">
+                    alt="Chinese hotpot spread with meat and veggies on dinner table" width="150">
                 <img class="teriyaki" src="images/food/asian/teriyaki.jpg" 
-                    alt="Teriyaki salmon bowl on dining table" width="250">
+                    alt="Teriyaki salmon bowl on dining table" width="150">
             </div>
         </div>
         
-        <div class="food-category-container-2">
-            <div class="mediterranean-food-text-container">
+        <div class="food-category-container-2" id="food-container-2">
+            <div class="mediterranean-food-text-container" id="mediterranean-food-text-container">
                 <h2>Mediterranean Food</h2>
                 <p>
-                    Add Text Here
-                </p>
-                <br>
-                <p>
-                    Add Text Here
-                </p>
-                <br>
-                <p>
-                    Add Text Here
+                    I don't eat out often, but when I do, I get Mediterranean Food because 
+                    it is my all-time favorite cuisine. A few favorite Mediterannean 
+                    dishes of mine are: chicken shawarma bowls, hummus and pita, 
+                    eggplant baba ganoush, and chickpea orzo salad.
                 </p>
                 <br>
             </div>
-            <div class="mediterranean-food-image-container">
+            <div class="mediterranean-food-image-container" id="mediterranean-food-image-container">
                 <img class="roasted-veggies" src="images/food/mediterranean/roasted-veggies.jpg" 
                     alt="Roasted carrots and chicken spread on patio table" 
                     width="350">
@@ -91,25 +118,21 @@
             </div>
         </div>
 
-        <div class="food-category-container-3">
-            <div class="australian-food-text-container">
+        <div class="food-category-container-3" id="food-container-3">
+            <div class="australian-food-text-container" id="australian-food-text-container">
                 <h2>Australian Food</h2>
                 <p>
-                    Add Text Here
-                </p>
-                <br>
-                <p>
-                    Add Text Here
-                </p>
-                <br>
-                <p>
-                    Add Text Here
+                    You might be thinking...wait aren't avocado toast and brunch bowls 
+                    with smoked salmon American-style breakfast? Actually, the trendy avocado 
+                    toast, smoked salmon plate with eggs, and breakfast bowl varieties 
+                    are inspired by the simple, yet nutritious Australian-style cafes menus. 
+                    Australia's cafe culture is robust, and it seems that America has quickly 
+                    adopted this with the establishment of Instagram-worthy cafes in 
+                    the nation's largest cities.
                 </p>
                 <br>
             </div>
-            <div class="australian-food-image-container">
-                <img class="eggs-benedict" src="images/food/australian/eggs-benedict.jpg" 
-                    alt="Eggs benedict with hollandaise sauce" width="300">
+            <div class="australian-food-image-container" id="australian-food-image-container">
                 <img class="avocado-toast" src="images/food/australian/avocado-toast.jpg" 
                     alt="Sunny side up egg with avocado toast" width="300">
                 <img class="smoked-salmon-bowl" src="images/food/australian/smoked-salmon-bowl.jpg" 
