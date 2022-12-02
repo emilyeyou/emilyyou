@@ -2,7 +2,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital@0;1&family=Quicksand:wght@300;400&family=Work+Sans:wght@300;400&display=swap');
 
-/* add emoji */
+/* add emoji cursor */
 html {
 	cursor: url('data:image/svg+xml;charset=utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" height="25" width="25"><text y="28" font-size="32">⚡️</text><path d="M0,2 L0,0 L2,0" /></svg>'), auto;
 }
@@ -107,19 +107,20 @@ img:hover:not(#disco-ball) {
 
 nav{
     text-align: center;
-    margin: auto;
+    justify-content: space-evenly;
 }
 
 nav ul{
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 nav li {
     color: #131313;
     font-size: 18px;
-    display: inline-block;
-    width: 25%;
+    display: inline-block;    
+    width: 50%;
     margin: 10px 25px;
     padding: 10px 30px;
 }
@@ -222,31 +223,27 @@ a.skip:focus{
 .noodles{
     grid-column: 1/ span 1;
     grid-row: 1/span 1;
-    margin: 15px;
 }
 
 .poke{
     grid-column: 1/ span 1;
     grid-row: 2/span 1;
-    margin: 15px;
 }
 
 .katsu{
     grid-column: 1/ span 1;
     grid-row: 3/span 1;
-    margin: 15px;
+
 }
 
 .hotpot{
     grid-column: 1/ span 1;
     grid-row: 4/span 1;
-    margin: 15px;
 }
 
 .teriyaki{
     grid-column: 1/ span 1;
     grid-row: 5/span 1;
-    margin: 15px;
 }
 
 /* styling mediterranean food and australian food grid */
@@ -263,19 +260,17 @@ a.skip:focus{
 .roasted-veggies, .avocado-toast{
     grid-column: 1/ span 1;
     grid-row: 1/span 1;
-    margin: 15px;
+
 }
 
 .nick-the-greek, .smoked-salmon-bowl{
     grid-column: 1/ span 1;
     grid-row: 2/span 1;
-    margin: 15px;
 }
 
 .orzo-salad, .veggie-bowl{
     grid-column: 1/ span 1;
     grid-row: 3/span 1;
-    margin: 15px;
 }
 
 @media screen and (min-width: 800px) {
@@ -284,7 +279,10 @@ a.skip:focus{
         display: inline-block;
     }
 
-    /* ALIGN RIGHT */
+    nav li {
+        width: 25%;
+    }
+
     nav ul{
         display: inline-block;
         align-items: center;
@@ -364,31 +362,26 @@ a.skip:focus{
     .noodles{
         grid-column: 1/ span 1;
         grid-row: 1/span 1;
-        margin: 15px;
     }
 
     .poke{
         grid-column: 2/ span 2;
         grid-row: 1/span 2;
-        margin: 15px;
     }
 
     .katsu{
         grid-column: 1/ span 1;
         grid-row: 2/span 1;
-        margin: 15px;
     }
 
     .hotpot{
         grid-column: 2/ span 1;
         grid-row: 2/span 4;
-        margin: 15px;
     }
 
     .teriyaki{
         grid-column: 1/ span 1;
         grid-row: 5/span 1;
-        margin: 15px;
     }
 
     /* styling mediterranean food and australian food grid */
@@ -405,19 +398,16 @@ a.skip:focus{
     .roasted-veggies, .avocado-toast{
         grid-column: 1/ span 1;
         grid-row: 1/span 1;
-        margin: 15px;
     }
 
     .nick-the-greek, .smoked-salmon-bowl{
         grid-column: 2/ span 1;
         grid-row: 1/span 3;
-        margin: 15px;
     }
 
     .orzo-salad, .veggie-bowl{
         grid-column: 1/ span 1;
         grid-row: 2/span 1;
-        margin: 15px;
     }
 
 }
@@ -508,31 +498,26 @@ a.skip:focus{
     .noodles{
         grid-column: 1/ span 1;
         grid-row: 1/span 1;
-        margin: 15px;
     }
 
     .poke{
         grid-column: 2/ span 1;
         grid-row: 1/span 1;
-        margin: 15px;
     }
 
     .katsu{
         grid-column: 3/ span 1;
         grid-row: 1/span 1;
-        margin: 15px;
     }
 
     .hotpot{
         grid-column: 1/ span 1;
         grid-row: 2/span 1;
-        margin: 15px;
     }
 
     .teriyaki{
         grid-column: 2/ span 1;
         grid-row: 2/span 1;
-        margin: 15px;
     }
 
     /* styling mediterranean food and australian food grid */
@@ -549,19 +534,16 @@ a.skip:focus{
     .roasted-veggies, .avocado-toast{
         grid-column: auto/ span 1;
         grid-row: 1/span 1;
-        margin: 15px;
     }
 
     .nick-the-greek, .smoked-salmon-bowl{
         grid-column: auto/ span 1;
         grid-row: 1/span 2;
-        margin: 15px;
     }
 
     .orzo-salad, .veggie-bowl{
         grid-column: auto/ span 1;
         grid-row: 1/span 3;
-        margin: 15px;
     }
 }
 
