@@ -13,16 +13,18 @@
 <body>
     <a class="skip" href="#main-norcal-container">Skip to Main Content</a>
     <header>
+        <!-- implement 'skip to main content' -->
         <img src="images/icon.png" alt="Disco ball clipart" id = "disco-ball" width="75">
       <nav>
           <ul>
+            <!-- add voiceover to all navigation links on click -->
             <li onclick="speakTitles('Home')"><i class="home"></i><a href="index.html">Home</a></li>
             <li onclick="speakTitles('Norcal Spots')" class="active"><a href = "norcal_spots.html">Norcal Spots</a></li>
             <li onclick="speakTitles('Food')"><i class="food"></i><a href="food.html">Food</a></li>
           </ul>
         </nav>
     </header>
-
+    <!-- main container with introductory text -->
     <main class="norcal-container" id="main-norcal-container" tabindex="0">
         <div class="norcal-intro" id="intro-norcal-text">
             <h1 id="main-norcal-header">My Favorite Places to Visit in Northern California</h1>
@@ -38,6 +40,7 @@
             </p>
             <br>
         </div>
+        <!-- Photo Worthy Spots container with text and images -->
         <div id="norcal-spots-container-1">
             <div class="photo-worthy-spots-text-container" id="photo-spots-text-container">
                 <h2>Photo-Worthy Spots</h2>
@@ -66,6 +69,7 @@
                     width="350">
             </div>
         </div>
+        <!-- Walkable Places container with text and images -->
         <div id="norcal-spots-container-2">
             <div class="walkable-places-text-container" id="walkable-spots-text-container">
                 <br>
@@ -97,7 +101,7 @@
                     alt="Sunset on Monterey beach" width="350">
             </div>
         </div>
-
+        <!-- Overnight Stays container with text and images -->
         <div id="norcal-spots-container-3">
             <div class="overnight-stays-text-container" id="overnight-stays-text-container">
                 <br>

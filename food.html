@@ -13,16 +13,18 @@
 <body>
     <a class="skip" href="#main-food-container">Skip to Main Content</a>
     <header>
+        <!-- implement 'skip to main content' -->
         <img src="images/icon.png" alt="Disco ball clipart" id = "disco-ball" width="75">
       <nav>
           <ul>
+            <!-- add voiceover to all navigation links on click -->
             <li onclick="speakTitles('Home')"><i class="home"></i><a href="index.html">Home</a></li>
             <li onclick="speakTitles('Norcal Spots')"><i class="norcal-spots"></i><a href = "norcal_spots.html">Norcal Spots</a></li>
             <li onclick="speakTitles('Food')"class="active"><a href="food.html">Food</a></li>
           </ul>
         </nav>
     </header>
-    
+    <!-- main container with introdudctory text -->
     <main class="food-container" id="main-food-container" tabindex="0">
         <div class="food-intro" id="intro-food-text">
             <h1 id="main-food-header">My Favorite Cuisines</h1>
@@ -38,6 +40,7 @@
             <br>
             <br>
         </div>
+        <!-- Asian Food container with text and images -->
         <div class="food-category-container-1" id="food-container-1">
             <div class="asian-food-text-container" id="asian-food-text-container">
                 <h2>Asian Food (Southeast Asian, East Asian, and Asian Pacific)</h2>
@@ -85,6 +88,7 @@
                     alt="Teriyaki salmon bowl on dining table" width="150">
             </div>
         </div>
+        <!-- Mediterranean Food container with text and images -->
         <div class="food-category-container-2" id="food-container-2">
             <div class="mediterranean-food-text-container" id="mediterranean-food-text-container">
                 <br>
@@ -109,6 +113,7 @@
                     alt="Greek orzo salad with tomatoes, cucumbers, and olives" width="350">
             </div>
         </div>
+        <!-- Australian Food container with text and images -->
         <div class="food-category-container-3" id="food-container-3">
             <div class="australian-food-text-container" id="australian-food-text-container">
                 <br>
@@ -137,6 +142,7 @@
         </div>
         <br>
         <br>
+        <!-- embed food Pinterest board -->
         <h2 id="Pinterest-descripton"> Where I find recipe and hosting inspiration! </h2>
         <div id="Pinterest">
             <div class="Pinterest-board">

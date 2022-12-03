@@ -7,6 +7,7 @@ html {
 	cursor: url('data:image/svg+xml;charset=utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" height="25" width="25"><text y="28" font-size="32">⚡️</text><path d="M0,2 L0,0 L2,0" /></svg>'), auto;
 }
 
+/* animate disco ball to bounce */
  .disco-ball-move {
     animation-name: bounce;
     animation-duration: 2s;
@@ -17,6 +18,7 @@ html {
     100% {transform: translateY(0);}
 }
 
+/* style typography and background image for overall website */
 body {
     font-family: 'Quicksand', sans-serif;
     color: #131313;
@@ -50,11 +52,11 @@ main {
     font-size: 20px;
 }
 
-/* typewriter animation */
 .container{
     display: inline-block;
 }
 
+/* add typewriter animation */
 .typed-out {
     overflow: hidden;
     border-right: .15em solid rgb(255, 101, 67);
@@ -92,6 +94,7 @@ p {
     font-size: 18px;
 }
 
+/* all images, except disco ball, have double borders */
 img:not(#disco-ball) {
     display: block;
     width: 275px;
@@ -101,10 +104,12 @@ img:not(#disco-ball) {
     border-radius: 10px;
 }
 
+/* all images in hover state, except disco ball, have solid borders */
 img:hover:not(#disco-ball) {
     border: 5px solid rgb(255, 101, 67);
 }
 
+/* center navigation bar */
 nav{
     text-align: center;
     justify-content: space-evenly;
@@ -142,6 +147,7 @@ a:visited{
     text-decoration: none
 }
 
+/* skip to main content using tab: accessibility feature */
 a.skip{
     background: white;
     left: 0;
@@ -164,6 +170,7 @@ a.skip:focus{
     margin: auto;
 }
 
+/* center-align Pinterest Board */
 .Pinterest-board{
     display: flex;
     justify-content: center;
@@ -282,7 +289,8 @@ a.skip:focus{
     nav li {
         width: 25%;
     }
-
+    
+    /* center navigation bar links for desktop view */
     nav ul{
         display: inline-block;
         align-items: center;
@@ -290,6 +298,7 @@ a.skip:focus{
         margin: auto;
     }
 
+    /* add typewriter animation */
     .typed-out {
         overflow: hidden;
         border-right: .15em solid rgb(255, 101, 67);
@@ -418,6 +427,7 @@ a.skip:focus{
         display: inline-block;
     }
 
+    /* center navigation bar links for desktop view */
     nav ul{
         display: flex;
         flex-direction: row;
@@ -426,6 +436,7 @@ a.skip:focus{
         margin: auto;
     }
 
+    /* add typewriter animation */
     .typed-out {
         overflow: hidden;
         border-right: .15em solid rgb(255, 101, 67);
@@ -547,9 +558,10 @@ a.skip:focus{
     }
 }
 
+/* prefers reduced motion removes animation from disco ball bounce */
 @media screen and (prefers-reduced-motion: reduce){
     
-    #icon{
+    #disco-ball{
         animation: none;
     }
   }
