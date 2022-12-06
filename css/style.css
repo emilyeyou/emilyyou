@@ -23,7 +23,7 @@ body {
     font-family: 'Quicksand', sans-serif;
     color: #131313;
     background-color: #ffffff;
-    background-image: url(../images/abstract.jpg);
+    background-image: url(../images/wavy.jpeg);
     margin: 6%;
 }
 
@@ -281,6 +281,11 @@ a.skip:focus{
 }
 
 @media screen and (min-width: 800px) {
+
+    body{
+        background-image: url(../images/aura.jpeg);
+    }
+
     /* typewriter animation */
     .container{
         display: inline-block;
@@ -422,6 +427,10 @@ a.skip:focus{
 }
 
 @media screen and (min-width: 1200px) {
+    body{
+        background-image: url(../images/abstract.jpg);
+    }
+
     /* typewriter animation */
     .container{
         display: inline-block;
